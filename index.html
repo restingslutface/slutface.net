@@ -224,6 +224,85 @@ a.perform-link:hover {
   transform:scale(1.1) rotate(-1deg);
   box-shadow:0 0 30px #8A2BE2,0 0 60px #5C1F9E,0 0 90px #5C1F9E;
 }
+  /* ================= MOBILE ONLY OVERRIDES ================= */
+/* Desktop stays EXACTLY the same because this only applies under 768px */
+@media (max-width: 768px) {
+
+  /* Give the page a bit more breathing room on phones */
+  .hero {
+    padding: 90px 16px 30px 16px;
+  }
+
+  /* Make the image bigger on phones (still above title) */
+  .hero img {
+    width: 360px;          /* increase for readability */
+    max-width: 88vw;       /* prevents overflow */
+    margin-bottom: 18px;
+  }
+
+  /* Make title readable (and stop it from exploding off-screen) */
+  .hero h1 {
+    font-size: 3.2em;      /* was 6em on desktop */
+    line-height: 1.05;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+  }
+
+  /* Subtitle bigger + clearer */
+  .hero h3 {
+    font-size: 1.35em;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  /* Location bigger */
+  .hero p {
+    font-size: 1.1em;
+    margin-bottom: 18px;
+  }
+
+  /* Buttons: larger tap targets + readable */
+  .btn {
+    width: min(92vw, 520px);  /* makes them full-width on phones but not huge */
+    padding: 18px 22px;
+    font-size: 20px;
+    margin: 10px 0;           /* stacked nicely */
+    border-radius: 16px;
+  }
+
+  /* Section spacing tighter for phone scroll */
+  section {
+    padding: 60px 16px;
+  }
+
+  section h2 {
+    font-size: 2.2em;
+    margin-bottom: 22px;
+  }
+
+  ul {
+    font-size: 1.2em;
+  }
+
+  /* Back-to-top star a bit bigger for thumbs */
+  .back-top {
+    width: 72px;
+    height: 72px;
+    bottom: 16px;
+    right: 16px;
+  }
+
+  /* Marquee: slightly smaller so it fits */
+  .announcement-text {
+    font-size: 1em;
+  }
+
+  .announcement-text img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -276,5 +355,6 @@ a.perform-link:hover {
 
 </body>
 </html>
+
 
 
